@@ -1,0 +1,692 @@
+
+#backmap{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	z-index: 1;
+}
+#divselected{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	z-index: 2;
+}
+
+
+  body {
+       font-family: 'Montserrat', sans-serif;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  div {
+    width: 100%;
+  }
+  img[usemap] {
+    border: none;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+  }
+    ::-webkit-scrollbar {
+        width: 1px;
+        height: 1px
+    }
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px white;
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: white;
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: white;
+    }
+  .navbar-brand img{
+  width: 140px;
+  }
+  #menu-derecho{
+    padding-right:15px;
+  }
+
+  #btn-derecho{
+    width: auto;
+    float: right;
+
+
+  }
+  #input-buscar{
+    border-radius: 10px;
+    margin-top: 4px;
+
+  }
+ 
+  .autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+/*menu capacidad*/
+  #collapse-cap{
+  z-index: 6;
+  position:absolute;
+  left:13px;
+  top:;
+  width: 190px;
+  height: auto;
+  background-color: rgba(00,00,00,.7);
+  border-radius: 3px;
+  
+}
+
+#menos, #mas{
+  width: 25px;
+  margin-top: -8px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*menu llegar*/
+#btn-llegar{
+  float: left;
+  width: 150px;
+}
+
+#collapse-llegar{
+  z-index: 6;
+  position:absolute;
+  right: 80px;
+  top: 55px;
+  width: 280px;
+  height: auto;
+  background-color: rgba(00,00,00,.7);
+  border-radius: 3px;
+  
+}
+#punto1,#punto2{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    #saveRuta{
+      display: none;
+    }
+    #cerrar-Ruta{
+      display: none;
+    }
+
+/*area admin*/
+
+
+
+
+/*mostrar info*/
+.sidenav {
+  height: 100%;
+  top: 0px;
+  right:  0px;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 20px;
+  z-index: 500;
+  box-shadow: -8px 0px 18px 1px rgba(0,0,0,0.1);
+  display: none;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#sala{
+  height: 120px;
+  max-height: 120px;
+  padding-top: 43px;
+}
+#iZona{
+  font-weight: bolder;
+  font-size: 1.5em;
+  margin-right: 30px;
+  float: right;
+  margin-top: 16px;
+}
+
+
+
+#divCarousel{
+  padding: 0px !important;
+  height: 30%;
+}
+.carousel-inner{
+  height: 100%;
+}
+.carousel-item  {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-item img  {
+    width: 100%;
+    height: 100%;
+  }
+  #ulSala{
+    padding: 0px 0px;
+  }
+  #iSala{
+    font-size: 25px;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  #divEditar{
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+ #ides{
+    text-align: justify;
+  }
+  #infodatos{
+  background-color: #e9e9e9;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  height: calc(100% - 40%);
+}
+
+li img{
+  width: 50px;
+  margin: 4px 7px;
+}
+li span {
+    padding-left: 10px;
+}
+ 
+#iedificio, #icap, #iarea{
+      font-size: 1rem;
+} 
+
+#infoRecursos{
+  background-color: rgb(0, 144, 69);
+  bottom: 0px;
+  position: fixed;
+  height: fit-content;
+  padding: 15px 15px;
+  /*right: 15px;*/
+}
+#infoRecursos img {
+    
+    margin: 0px 30px;
+}
+
+
+/*boton limpiar*/
+#btn-limpiar{
+  z-index: 6;
+  position:fixed;
+  left: 0px;
+  top:70px;
+  border-radius: 9px;
+  border:1px solid black;
+  font-size: 18px; 
+}
+#btn-zoomIn{
+  z-index: 6;
+  position:fixed;
+  left: 0px;
+  top:120px;
+  border-radius: 9px;
+  border:1px solid black;
+  font-size: 12px; 
+}
+#btn-zoomOut{
+  z-index: 6;
+  position:fixed;
+  left: 0px;
+  top:151px;
+  border-radius: 9px;
+  border:1px solid black;
+  font-size: 12px; 
+}
+#range-zoom{
+    z-index: 6;
+    position: fixed;
+    left: 0px;
+    top: 120px;
+    height: 60px;
+    width: auto;
+    padding: 10px;
+    width: fit-content;
+    background-color: rgba(22,22,22,.2);
+    border-radius: 10px;
+    padding-right: 10px;
+    margin-left: 15px;
+
+}
+#inputZoom{
+  width: 100px;
+
+}
+
+
+.main {
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+#select-area img{
+  width: 20px;
+}
+#btn-area-cancel img{
+  width: 20px;
+}
+.lb-rec{
+  font-size: 15px;
+}
+
+#btnSave{
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #007bff;
+    display: none;
+}
+#btnEdit{
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #007bff;
+    display: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.iconosFacilities{
+  width: 40px;
+  display: inline-block;
+  margin:4px 3px;
+}
+#divFacilities{
+  border-radius: 150px;
+  width: auto;
+  height:50px;
+  margin: -1px 3px -20px 6px;
+  padding-left: 2px;
+  display:inline-block;
+  display: none;
+  background-color: white;
+  overflow: overlay;
+  border:1px solid black
+}
+#btnfacilities{
+  border-radius: 150px;
+  width: 40px;
+  height:40px;
+  background-color: black;
+  margin: 5px 0px;
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+ 
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+  
+  /* Make the image fully responsive */
+  
+  /*.des{
+    padding: 0px 10px;
+  }*/
+
+  
+  
+    
+   
+  
+    .bg2{
+      position: absolute;
+      z-index: -2;
+      line-height: 0px;
+    }
+
+   
+    
+    #btnBuscar, #btnAdmin{
+      background: transparent;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    #btnBuscar:hover,#btnAdd:hover,#clean:hover, #btnAdmin:hover{
+      background: black;
+      color: white;
+      border-color: white;
+    }
+    #btnAdd,#clean{
+      width: 100%;
+      height: 20%;
+      background: transparent;
+      color: black;
+      margin: 1%;
+      border-radius: 5px;
+      display: none;
+    }
+
+    .sombras{
+      position:absolute; 
+      top:0px; 
+      left:0px; 
+      display: none;
+      width: 100%;
+      /*transform: rotate(90deg);*/
+    }
+.recorrido{
+      position:absolute; 
+      top:0px; 
+      left:10px; 
+      display: none;
+      width: 100%;
+      transform: rotate(90deg);
+    }
+    
+
+   
+    #div-lugar{
+      position: absolute;
+      z-index: 502;
+
+    }
+    #form-lugar{
+      
+      top:0px;
+      right: 0px;
+      height: 100%;
+      color: black;
+      padding-top:75px;
+      padding-bottom:2%;
+      background-color: white ;
+      border: solid 1px green;
+      border-radius: 10px;
+      display: none;
+      padding-left:0px; 
+
+
+
+    }
+
+    #nopersonas{
+      width:100px; 
+      margin-bottom:5px;
+    }
+    #nosala{
+      width:100px; 
+      margin-bottom:5px;
+    }
+   .switchAdd{
+    width: 50px;
+  
+}
+.subir{
+    width: 100%;
+    padding: 5px 10px;
+    background: #17a2b8;
+    color:#fff;
+    border:0px solid #fff;
+    border-radius: 10px;
+}
+ 
+.subir:hover{
+    color:#fff;
+    background: #117c7d;
+}
+
+
+#sideInfo{
+  margin:0px 0px;
+  width: 100%;
+  height: 100%;
+}
+#btn-cap,#btn-llegar,#btnAdmin, #btn-cap-cerrar ,#btn-llegar-cerrar, #btn-limpiar, #select-area , #btn-area-cancel,#saveRuta, #cerrar-Ruta, #btnAdminCerrar, #Confirmar, #btnSearch,#btnLogIn, #nodo-sala{
+    width: auto;
+    height: calc(1.5em + .75rem + 2px);
+    border-radius: 10px;
+    padding-top: 5.92;
+    font-size: 1rem;
+    margin-top: 4px;
+  }
+  #btn-limpiar{
+    margin-left: 15px;
+  }
+
+
+#divBtnSave{
+    bottom: 0px;
+    position: fixed;
+    height: fit-content;
+    padding: 0px;
+    color:white;
+    margin-left: -15px;
+}
+
+#form-lugar{
+    overflow: scroll;
+  }
+ 
+#btn-area-cancel{
+  display: none;
+}
+#Confirmar{
+  display: none;
+}
+
+.grayscale{
+  filter: gray;
+  filter: grayscale(1); 
+  -webkit-filter: grayscale(1); 
+}
+.hide{
+  display: none;
+}
+.btn-outline-dark:hover img{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+ 
+/*breakpoint lg*/
+  @media screen and (max-width: 992px) {
+
+    #btnAdmin{
+      display: none !important;
+    }
+    #editarl{
+      display: none !important;
+
+    }
+   
+
+    #collapse-llegar{
+      right: 20px;
+    }
+
+
+
+    
+
+
+    }
+     @media screen and (max-width: 576px) {
+      nav{
+        display: none !important;
+      }
+
+      #sala {
+    max-height: 120px;
+    height: auto;
+    padding-top: 0px;
+      }
+      .sidenav{
+        padding-top: 0px;
+      }
+      #iZona {
+    font-weight: bolder;
+    font-size: 1em;
+    margin-right: 30px;
+    float: right;
+    margin-top: 21px;
+}
+     }
+
+    
